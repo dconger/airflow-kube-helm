@@ -33,7 +33,7 @@ spec:
         image: k8s.gcr.io/git-sync:v3.0.1
         imagePullPolicy: IfNotPresent
         volumeMounts:
-          - name: airflow-dags
+          - name: {{ template "airflow.fullname" . }}-dags
             mountPath: /git
         env:
           - name: GIT_SYNC_REPO
@@ -71,7 +71,7 @@ spec:
         - name: airflow-config
           mountPath: /usr/local/airflow/airflow.cfg
           subPath: airflow.cfg
-        - name: airflow-dags
+        - name: {{ template "airflow.fullname" . }}-dags
           mountPath: /usr/local/airflow/dags
         - name: airflow-logs
           mountPath: /usr/local/airflow/logs
