@@ -1,5 +1,5 @@
 description: Airflow running on KubernetesExecutor
-name: airflow-kube-helm-dconger
+name: airflow
 version: 0.0.1
 appVersion: 2.0.0-dev
 icon: https://usr/local/airflow.apache.org/_images/pin_large.png
