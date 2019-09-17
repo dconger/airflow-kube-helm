@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   airflow-kube-helm-dconger:
   - appVersion: 2.0.0-dev
-    created: "2019-09-17T15:22:06.86226-06:00"
+    created: "2019-09-17T15:33:38.422603-06:00"
     description: Airflow running on KubernetesExecutor
-    digest: 616d31500aaba6fe0d00860e5e2c1e11eda09f3c6fce070dca7d91cc95021d14
+    digest: 2f9431833d825f127f9274fb906e01ecf8e89cf11c09b987972ea6aa3cb8be0d
     home: https://usr/local/airflow.apache.org/
     icon: https://usr/local/airflow.apache.org/_images/pin_large.png
     keywords:
@@ -22,7 +22,7 @@ entries:
     version: 0.0.1
   postgresql:
   - appVersion: 9.6.2
-    created: "2019-09-17T15:22:06.863004-06:00"
+    created: "2019-09-17T15:33:38.423572-06:00"
     description: Object-relational database management system (ORDBMS) with an emphasis
       on extensibility and on standards-compliance.
     digest: 228090d688160c5f6783838d37a27fc9acd4207b8505913c5b04dbab1904c6fd
@@ -43,4 +43,4 @@ entries:
     urls:
     - https://dconger.github.io/airflow-kube-helm/charts/postgresql-0.13.1.tgz
     version: 0.13.1
-generated: "2019-09-17T15:22:06.852659-06:00"
+generated: "2019-09-17T15:33:38.400781-06:00"

@@ -31,6 +31,8 @@ spec:
       securityContext:
         fsGroup: 1000
       restartPolicy: Always
+      imagePullSecrets:
+        - name: gitlab-registry
       initContainers:
       - name: "init-airflow"
         image: {{ .Values.airflow.image.repository }}:{{ .Values.airflow.image.tag }}
