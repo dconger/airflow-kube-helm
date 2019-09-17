@@ -1,0 +1,46 @@
+apiVersion: v1
+entries:
+  airflow-kube-helm-dconger:
+  - appVersion: 2.0.0-dev
+    created: "2019-09-17T14:39:31.860744-06:00"
+    description: Airflow running on KubernetesExecutor
+    digest: e141af7cd9a76f7a9deae1dce3cfbca5a35f4b5bb2ed0fafab680d1d624bc44f
+    home: https://usr/local/airflow.apache.org/
+    icon: https://usr/local/airflow.apache.org/_images/pin_large.png
+    keywords:
+    - workflow
+    - airflow
+    - dag
+    maintainers:
+    - email: dconger2@gmail.com
+      name: Dan Conger
+    name: airflow-kube-helm-dconger
+    sources:
+    - https://usr/local/airflow.apache.org/
+    urls:
+    - https://dconger.github.io/airflow-kube-helm/airflow-kube-helm-dconger-0.0.1.tgz
+    version: 0.0.1
+  postgresql:
+  - appVersion: 9.6.2
+    created: "2019-09-17T14:39:31.861415-06:00"
+    description: Object-relational database management system (ORDBMS) with an emphasis
+      on extensibility and on standards-compliance.
+    digest: 228090d688160c5f6783838d37a27fc9acd4207b8505913c5b04dbab1904c6fd
+    engine: gotpl
+    home: https://www.postgresql.org/
+    icon: https://www.postgresql.org/media/img/about/press/elephant.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    maintainers:
+    - name: databus23
+    name: postgresql
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/docker-library/postgres
+    urls:
+    - https://dconger.github.io/airflow-kube-helm/charts/postgresql-0.13.1.tgz
+    version: 0.13.1
+generated: "2019-09-17T14:39:31.856285-06:00"

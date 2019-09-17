@@ -1,12 +1,12 @@
 description: Airflow running on KubernetesExecutor
-name: airflow
+name: airflow-kube-helm-dconger
 version: 0.0.1
 appVersion: 2.0.0-dev
 icon: https://usr/local/airflow.apache.org/_images/pin_large.png
 home: https://usr/local/airflow.apache.org/
 maintainers:
-  - name: Brecht De VLieger
-    email: bdevlieger@crunchanalytics.be
+  - name: Dan Conger
+    email: dconger2@gmail.com
 sources:
   - https://usr/local/airflow.apache.org/
 keywords:
