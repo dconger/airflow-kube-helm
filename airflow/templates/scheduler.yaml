@@ -27,6 +27,8 @@ spec:
       securityContext:
         fsGroup: 1000
       restartPolicy: Always
+      imagePullSecrets:
+        - name: gitlab-registry
       containers:
       {{- if not .Values.airflow.dags.persistence.enabled }}
       - name: git-sync
