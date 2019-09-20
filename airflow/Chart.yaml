@@ -1,6 +1,6 @@
 description: Airflow running on KubernetesExecutor
 name: airflow
-version: 0.0.1
+version: 0.0.2
 appVersion: 2.0.0-dev
 icon: https://usr/local/airflow.apache.org/_images/pin_large.png
 home: https://usr/local/airflow.apache.org/
