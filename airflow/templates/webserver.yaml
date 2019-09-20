@@ -33,8 +33,6 @@ spec:
       restartPolicy: Always
       imagePullSecrets:
         - name: gitlab-registry
-      resources:
-{{ toYaml .Values.resources.web | indent 9 }}
       initContainers:
       - name: "init-airflow"
         image: {{ .Values.airflow.image.repository }}:{{ .Values.airflow.image.tag }}
@@ -133,6 +131,8 @@ spec:
       - name: webserver
         image: {{ .Values.airflow.image.repository }}:{{ .Values.airflow.image.tag }}
         imagePullPolicy: {{ .Values.airflow.image.pull_policy }}
+        resources:
+{{ toYaml .Values.resources.web | indent 11 }}
         ports:
         - name: webserver
           containerPort: 8080

@@ -32,8 +32,6 @@ spec:
       restartPolicy: Always
       imagePullSecrets:
         - name: gitlab-registry
-      resources:
-{{ toYaml .Values.resources.scheduler | indent 9 }}
       containers:
       {{- if not .Values.airflow.dags.persistence.enabled }}
       - name: git-sync
@@ -66,6 +64,8 @@ spec:
         image: {{ .Values.airflow.image.repository }}:{{ .Values.airflow.image.tag }}
         imagePullPolicy: {{ .Values.airflow.image.pull_policy }}
         args: ["scheduler"]
+        resources:
+{{ toYaml .Values.resources.scheduler | indent 11 }}
         envFrom:
         - secretRef:
             name: {{ template "airflow.fullname" . }}-env
