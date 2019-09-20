@@ -33,7 +33,7 @@ spec:
       imagePullSecrets:
         - name: gitlab-registry
       resources:
-{{ toYaml .Values.resources | indent 9 }}
+{{ toYaml .Values.resources.scheduler | indent 9 }}
       containers:
       {{- if not .Values.airflow.dags.persistence.enabled }}
       - name: git-sync
