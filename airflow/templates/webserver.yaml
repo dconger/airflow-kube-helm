@@ -33,6 +33,8 @@ spec:
       restartPolicy: Always
       imagePullSecrets:
         - name: gitlab-registry
+      resources:
+{{ toYaml .Values.resources | indent 9 }}
       initContainers:
       - name: "init-airflow"
         image: {{ .Values.airflow.image.repository }}:{{ .Values.airflow.image.tag }}

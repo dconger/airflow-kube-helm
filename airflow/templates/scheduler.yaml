@@ -32,6 +32,8 @@ spec:
       restartPolicy: Always
       imagePullSecrets:
         - name: gitlab-registry
+      resources:
+{{ toYaml .Values.resources | indent 9 }}
       containers:
       {{- if not .Values.airflow.dags.persistence.enabled }}
       - name: git-sync
