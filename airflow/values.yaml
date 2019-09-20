@@ -62,9 +62,9 @@ airflow:
   ##     HTTP_PROXY: "http://proxy.mycompany.com:123"
   config:
 
-  logs:
-    persistence:
-      accessMode: ReadWriteOnce
+  #logs:
+    #persistence:
+      #accessMode: ReadWriteOnce
       ##
       ## Persistent Volume Storage Class
       ## If defined, storageClassName: <storageClass>
@@ -75,11 +75,11 @@ airflow:
       # storageClass: default
       ##
       ## Existing claim to use
-      existingClaim:
-      existingClaimSubPath:
+      #existingClaim:
+      #existingClaimSubPath:
       ##
       ## Persistant storage size request
-      size: 1Gi
+      #size: 1Gi
 
   ##
   ## Configure DAGs deployment and update
