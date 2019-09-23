@@ -8,9 +8,9 @@ rules:
   resources: ["pods"]
   verbs: ["watch", "create"]
 apiVersion: rbac.authorization.k8s.io/v1beta1
-kind: ClusterRoleBinding
+kind: RoleBinding
 metadata:
-  name: {{ template "airflow.fullname" . }}-cluster-access
+  name: {{ template "airflow.fullname" . }}-ns-access
   labels:
     app: {{ template "airflow.name" . }}-scheduler
     chart: {{ template "airflow.chart" . }}
@@ -19,9 +19,9 @@ metadata:
 subjects:
   - kind: ServiceAccount
     # Reference to upper's `metadata.name`
-    name: {{ template "airflow.fullname" . }}-cluster-access
+    name: {{ template "airflow.fullname" . }}-ns-access
     namespace: {{ .Release.Namespace }}
 roleRef:
-  kind: ClusterRole
+  kind: Role
   name: airflow-create-watch
   apiGroup: rbac.authorization.k8s.io
