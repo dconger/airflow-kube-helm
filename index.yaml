@@ -2,9 +2,9 @@ apiVersion: v1
 entries:
   airflow:
   - appVersion: 2.0.0-dev
-    created: "2019-09-23T12:50:13.171838-06:00"
+    created: "2019-09-23T13:07:53.539419-06:00"
     description: Airflow running on KubernetesExecutor
-    digest: 649b1d947964d2cba45e8bd33e7840c6868f5fd30ead7c2335128cba7c4b7183
+    digest: de04e17cba183ae8fa8b59d45473ccf663107497df64268e9e5c6d4a2dcba7e8
     home: https://usr/local/airflow.apache.org/
     icon: https://usr/local/airflow.apache.org/_images/pin_large.png
     keywords:
@@ -21,7 +21,7 @@ entries:
     - https://dconger.github.io/airflow-kube-helm/airflow-0.0.2.tgz
     version: 0.0.2
   - appVersion: 2.0.0-dev
-    created: "2019-09-23T12:50:13.174274-06:00"
+    created: "2019-09-23T13:07:53.542163-06:00"
     description: Airflow running on KubernetesExecutor
     digest: 1be20cfe8b777764fa0380ded0685ca47dbe475cac423f9eac295653bea7458c
     home: https://usr/local/airflow.apache.org/
@@ -40,7 +40,7 @@ entries:
     - https://dconger.github.io/airflow-kube-helm/airflow/airflow-0.0.2.tgz
     version: 0.0.2
   - appVersion: 2.0.0-dev
-    created: "2019-09-23T12:50:13.169272-06:00"
+    created: "2019-09-23T13:07:53.536737-06:00"
     description: Airflow running on KubernetesExecutor
     digest: 05eb297b075ffaed8021342e61214116f4d1b6542172025830bcbe0424f6c707
     home: https://usr/local/airflow.apache.org/
@@ -58,4 +58,4 @@ entries:
     urls:
     - https://dconger.github.io/airflow-kube-helm/airflow-0.0.1.tgz
     version: 0.0.1
-generated: "2019-09-23T12:50:13.161286-06:00"
+generated: "2019-09-23T13:07:53.532715-06:00"
