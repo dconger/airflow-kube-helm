@@ -12,7 +12,6 @@ spec:
   selector:
     matchLabels:
       app: {{ template "airflow.name" . }}-scheduler
-  serviceAccountName: {{ template "airflow.fullname" . }}-ns-access
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -32,6 +31,7 @@ spec:
       restartPolicy: Always
       imagePullSecrets:
         - name: gitlab-registry
+      serviceAccountName: {{ template "airflow.fullname" . }}-ns-access
       containers:
       {{- if not .Values.airflow.dags.persistence.enabled }}
       - name: git-sync
