@@ -12,7 +12,7 @@ spec:
   selector:
     matchLabels:
       app: {{ template "airflow.name" . }}-scheduler
-  serviceAccountName: {{ template "airflow.fullname" . }}-cluster-access
+  serviceAccountName: {{ template "airflow.fullname" . }}-ns-access
   strategy:
     type: RollingUpdate
     rollingUpdate:
